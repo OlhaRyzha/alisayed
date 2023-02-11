@@ -1,2 +1,6 @@
-@import './common';
-@import './example';
+@import './base/normalize';
+@import './utils/variables';
+@import './base/base';
+@import './header';
+@import './main';
+@import './footer';

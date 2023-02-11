@@ -1,0 +1,179 @@
+.footer__container {
+  min-height: 715px;
+  display: flex;
+}
+
+.logo {
+  min-height: 715px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 458px;
+  padding: 52px 37px 47px 48px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background: linear-gradient(0deg, rgba(29, 83, 103, 0.75),
+      rgba(29, 83, 103, 0.75)), url(../images/bg/boy.png);
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../images/bg_2x/boy_2x.png);
+  }
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    width: 373px;
+    font-weight: 300;
+    font-size: 45px;
+    line-height: calc(66 / 45);
+
+    & b {
+      font-weight: 900;
+    }
+  }
+
+  svg {
+    margin-bottom: 22px;
+
+    &:hover {
+      -webkit-animation: flip-scale-up-hor 0.5s linear both;
+      animation: flip-scale-up-hor 0.5s linear both;
+    }
+  }
+
+  @-webkit-keyframes flip-scale-up-hor {
+    0% {
+      -webkit-transform: scale(1) rotateX(0);
+      transform: scale(1) rotateX(0);
+    }
+
+    50% {
+      -webkit-transform: scale(2.5) rotateX(-90deg);
+      transform: scale(2.5) rotateX(-90deg);
+    }
+
+    100% {
+      -webkit-transform: scale(1) rotateX(-180deg);
+      transform: scale(1) rotateX(-180deg);
+    }
+  }
+
+  @keyframes flip-scale-up-hor {
+    0% {
+      -webkit-transform: scale(1) rotateX(0);
+      transform: scale(1) rotateX(0);
+    }
+
+    50% {
+      -webkit-transform: scale(2.5) rotateX(-90deg);
+      transform: scale(1.5) rotateX(-90deg);
+    }
+
+    100% {
+      -webkit-transform: scale(1) rotateX(-180deg);
+      transform: scale(1) rotateX(-180deg);
+    }
+  }
+
+  &__creator {
+    font-weight: 900;
+    font-size: 42px;
+    line-height: calc(66 / 42);
+  }
+}
+
+.modal-form {
+  min-width: 908px;
+  padding: 63px 236px 72px 57px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background: linear-gradient(0deg, rgba(90, 102, 95, .75),
+      rgba(90, 102, 95, .75)), url(../images/bg/road.png);
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../images/bg_2x/road_2x.png);
+  }
+
+
+  &__title {
+    font-weight: 900;
+    font-size: 45px;
+    line-height: calc(66 / 45);
+    margin-bottom: 58px;
+  }
+
+
+  &__wrap {
+    display: flex;
+    gap: 11px;
+    margin-bottom: 13px;
+  }
+
+  & input {
+    width: 302px;
+    height: 55px;
+    background: transparent;
+    border-radius: 10px;
+    padding: 11px 0 11px 27px;
+    border: none;
+    outline: 1px solid lightgrey;
+
+    &::placeholder {
+      color: var(--main-txt-cl)
+    }
+  }
+
+  & textarea {
+    resize: none;
+    width: 619px;
+    height: 161px;
+    background: transparent;
+    border-radius: 10px;
+    padding: 11px 0 11px 27px;
+    border: none;
+    outline: 1px solid lightgrey;
+    margin-bottom: 94px;
+  }
+
+  &__list {
+    display: flex;
+    gap: 6px;
+    margin-top: 15px;
+    margin-bottom: 40px;
+  }
+
+  &__item {
+    padding: 10px;
+    width: 45px;
+    height: 45px;
+    border-radius: 8px;
+    transition: all 0.3ms linear;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &:first-child {
+      background-color: #345BB4;
+
+    }
+
+    &:nth-child(2) {
+      background-color: #E64895;
+
+    }
+
+    &:last-child {
+      background-color: #00B4FF;
+
+    }
+  }
+
+}

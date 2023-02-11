@@ -1,0 +1,180 @@
+.main__container {
+  display: flex;
+}
+
+.benefits {
+  min-width: 614px;
+  padding: 70px 103px 66px 59px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background: linear-gradient(0deg,
+      rgba(30, 146, 175, 0.75), rgba(30, 146, 175, 0.75)),
+    url(../images/bg/books.png);
+  ;
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../images/bg_2x/books_2x.png);
+  }
+
+  &__item+&__item {
+    margin-top: 85px;
+  }
+
+  &__title {
+    margin-bottom: 14.29px;
+    color: var(--main-txt-cl);
+    font-weight: 300;
+    font-size: 45px;
+    line-height: calc(66 / 45);
+
+    & b {
+      font-weight: 900;
+    }
+  }
+
+  &__text {
+    width: 452px;
+  }
+}
+
+.section-wrap {
+  display: flex;
+  min-width: 752px;
+  flex-direction: column;
+}
+
+.starting,
+.verified {
+  height: 100%;
+  padding: 60px 132px 70px 54px;
+}
+
+.starting {
+  color: var(--primery-txt-cl);
+  background-repeat: no-repeat;
+  background-position: center;
+  background: linear-gradient(0deg, rgba(255, 244, 210, 0.91),
+      rgba(255, 244, 210, 0.91)), url(../images/bg/decor.png);
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../images/bg_2x/decor_2x.png);
+  }
+
+  &__title {
+    margin-bottom: 14.29px;
+    font-weight: 300;
+    font-size: 45px;
+    line-height: calc(66 / 45);
+
+    & b {
+      font-weight: 900;
+    }
+  }
+
+  &__text {
+    width: 566px;
+    margin-bottom: 53px;
+  }
+
+
+  &__btn {
+    width: 210px;
+    height: 50px;
+    border: 1px solid var(--primery-txt-cl);
+    background-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+}
+
+.verified {
+  color: var(--main-txt-cl);
+  background-repeat: no-repeat;
+  background-position: center;
+  background: linear-gradient(0deg, rgba(22, 38, 51, 0.75),
+      rgba(22, 38, 51, 0.75)), url(../images/bg/workplace.png);
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    background-image: url(../images/bg_2x/workplace_2x.png);
+  }
+
+  &__btn {
+    padding: 14px 49px;
+    border: 1px solid var(--primery-txt-cl);
+    background-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    color: var(--main-txt-cl);
+    border: 1px solid var(--main-txt-cl);
+    background-color: transparent;
+    border-radius: 10px;
+
+  }
+}
+
+.backdrop {
+  background-color: grey;
+  opacity: .97;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+}
+
+.modal {
+  position: absolute;
+  height: 800px;
+  width: 800px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+  border-radius: 20px;
+  display: flex;
+  z-index: 10;
+}
+
+.modal-close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 10;
+  font-size: 10px;
+}
+
+
+.modal-close:hover {
+  cursor: pointer;
+}
+
+.modal-wrap {
+  & .starting__title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  & iframe {
+    border-radius: 20px;
+  }
+}
+
+.backdrop.hidden,
+.modal.hidden {
+  display: none;
+}
