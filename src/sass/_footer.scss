@@ -19,7 +19,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     background: linear-gradient(0deg, rgba(29, 83, 103, 0.75),
-      rgba(29, 83, 103, 0.75)), url('/src/images/bg/boy_2x.png');
+      rgba(29, 83, 103, 0.75)), url('/src/images/bg_2x/boy_2x.png');
   }
 
   &__wrap {
@@ -100,7 +100,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     background: linear-gradient(0deg, rgba(90, 102, 95, .75),
-      rgba(90, 102, 95, .75)), url('/src/images/bg/road_2x.png');
+      rgba(90, 102, 95, .75)), url('/src/images/bg_2x/road_2x.png');
   }
 
 
