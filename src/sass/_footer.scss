@@ -13,12 +13,12 @@
   background-repeat: no-repeat;
   background-position: center;
   background: linear-gradient(0deg, rgba(29, 83, 103, 0.75),
-      rgba(29, 83, 103, 0.75)), url(../images/bg/boy.png);
+      rgba(29, 83, 103, 0.75)), url('/src/images/bg/boy.png');
 
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-    background-image: url(../images/bg_2x/boy_2x.png);
+    background-image: url('/src/images/bg_2x/boy_2x.png');
   }
 
   &__wrap {
@@ -93,12 +93,12 @@
   background-repeat: no-repeat;
   background-position: center;
   background: linear-gradient(0deg, rgba(90, 102, 95, .75),
-      rgba(90, 102, 95, .75)), url(../images/bg/road.png);
+      rgba(90, 102, 95, .75)), url('/src/images/bg/road.png');
 
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-    background-image: url(../images/bg_2x/road_2x.png);
+    background-image: url('/src/images/bg_2x/road_2x.png');
   }
 
 

@@ -10,13 +10,13 @@
   background-position: center;
   background: linear-gradient(0deg,
       rgba(30, 146, 175, 0.75), rgba(30, 146, 175, 0.75)),
-    url(../images/bg/books.png);
+    url('/src/images/bg/books.png');
   ;
 
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-    background-image: url(../images/bg_2x/books_2x.png);
+    background-image: url('/src/images/bg_2x/books_2x.png');
   }
 
   &__item+&__item {
@@ -57,12 +57,12 @@
   background-repeat: no-repeat;
   background-position: center;
   background: linear-gradient(0deg, rgba(255, 244, 210, 0.91),
-      rgba(255, 244, 210, 0.91)), url(../images/bg/decor.png);
+      rgba(255, 244, 210, 0.91)), url('/src/images/bg/decor.png');
 
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-    background-image: url(../images/bg_2x/decor_2x.png);
+    background-image: url('/src/images/bg_2x/decor_2x.png');
   }
 
   &__title {
@@ -97,12 +97,12 @@
   background-repeat: no-repeat;
   background-position: center;
   background: linear-gradient(0deg, rgba(22, 38, 51, 0.75),
-      rgba(22, 38, 51, 0.75)), url(../images/bg/workplace.png);
+      rgba(22, 38, 51, 0.75)), url('/src/images/bg/workplace.png');
 
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-    background-image: url(../images/bg_2x/workplace_2x.png);
+    background-image: url('/src/images/bg_2x/workplace_2x.png');
   }
 
   &__btn {

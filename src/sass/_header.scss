@@ -1,12 +1,12 @@
 .header__bg-img {
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url('../images/bg/dog.png');
+  background-image: url('/src/images/bg/dog.png');
 
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-    background-image: url(../images/bg_2x/dog_2x.png);
+    background-image: url('/src/images/bg_2x/dog_2x.png');
   }
 
   min-width: 908px;

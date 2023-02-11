@@ -1,3 +1,3 @@
-import './js/LS/contact-form';
-import './js/ViewOurHistoryBtnClick/ViewOurHistoryBtnClick';
-import './js/OnBurgerClick/OnBurgerClick';
+import '/src/js/LS/contact-form';
+import '/src/js/ViewOurHistoryBtnClick/ViewOurHistoryBtnClick';
+import '/src/js/OnBurgerClick/OnBurgerClick';
