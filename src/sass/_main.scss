@@ -18,7 +18,7 @@
   (min-resolution: 2dppx) {
    background: linear-gradient(0deg,
       rgba(30, 146, 175, 0.75), rgba(30, 146, 175, 0.75)),
-    url('/src/images/bg/books_2x.png');
+    url('/src/images/bg_2x/books_2x.png');
   }
 
   &__item+&__item {
@@ -65,7 +65,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     background: linear-gradient(0deg, rgba(255, 244, 210, 0.91),
-      rgba(255, 244, 210, 0.91)), url('/src/images/bg/decor_2x.png');
+      rgba(255, 244, 210, 0.91)), url('/src/images/bg_2x/decor_2x.png');
   }
 
   &__title {
@@ -106,7 +106,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     background: linear-gradient(0deg, rgba(22, 38, 51, 0.75),
-      rgba(22, 38, 51, 0.75)), url('/src/images/bg/workplace_2x.png');
+      rgba(22, 38, 51, 0.75)), url('/src/images/bg_2x/workplace_2x.png');
   }
 
   &__btn {
