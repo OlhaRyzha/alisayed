@@ -6,7 +6,7 @@ const userInfo = {};
 const fillContactFormFields = () => {
   const userInfoFromLS = localStorageService.load('userData');
 
-  if (userInfoFromLS === undefined) {
+  if (userInfoFromLS === 'undefined') {
     return;
   }
 
