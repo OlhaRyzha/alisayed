@@ -10,7 +10,10 @@ const fillContactFormFields = () => {
     return;
   }else{
       for (const prop in userInfoFromLS) {
-  contactFormEl.elements[prop]?.value = userInfoFromLS[prop] || '' ;
+        if(contactFormEl.elements[prop] === undefined){
+        return
+        }
+  contactFormEl.elements[prop].value = userInfoFromLS[prop] || '' ;
   }
   }
 
