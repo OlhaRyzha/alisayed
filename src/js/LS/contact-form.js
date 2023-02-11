@@ -11,9 +11,12 @@ const fillContactFormFields = () => {
   }
 
   for (const prop in userInfoFromLS) {
-    contactFormEl.elements[prop].value = userInfoFromLS[prop];
+    if (contactFormEl.elements.name === 'message') {
+      return;
+    } else {
+      contactFormEl.elements[prop].value = userInfoFromLS[prop];
+    }
   }
-  console.log(userInfo);
 };
 
 fillContactFormFields();
