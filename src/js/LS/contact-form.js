@@ -6,17 +6,14 @@ const userInfo = {};
 const fillContactFormFields = () => {
   const userInfoFromLS = localStorageService.load('userData');
 
-  if (userInfoFromLS === 'undefined') {
+  if (userInfoFromLS === undefined) {
     return;
+  }else{
+      for (const prop in userInfoFromLS) {
+  contactFormEl.elements[prop].value = userInfoFromLS[prop];
+  }
   }
 
-  for (const prop in userInfoFromLS) {
-    if (contactFormEl.elements.name === 'message') {
-      return;
-    } else {
-      contactFormEl.elements[prop].value = userInfoFromLS[prop];
-    }
-  }
 };
 
 fillContactFormFields();
