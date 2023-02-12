@@ -50,6 +50,14 @@
     & b {
       font-weight: 900;
     }
+
+    @media screen and (min-width: 768px) {
+      width: 300px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 373px;
+    }
   }
 
   svg {
