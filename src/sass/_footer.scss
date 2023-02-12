@@ -42,7 +42,7 @@
   }
 
   &__title {
-    width: 373px;
+    width: 300px;
     font-weight: 300;
     font-size: 45px;
     line-height: calc(66 / 45);
@@ -52,12 +52,10 @@
     }
 
     @media screen and (min-width: 768px) {
-      width: 300px;
-    }
-
-    @media screen and (min-width: 1366px) {
       width: 373px;
     }
+
+
   }
 
   svg {
