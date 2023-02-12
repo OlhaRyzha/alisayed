@@ -43,7 +43,9 @@ img {
   @media screen and (min-width: 1366px) {
     max-width: 1366px;
   }
+
 }
+
 
 .visually-hidden {
   position: absolute;
@@ -56,4 +58,12 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+header,
+main,
+footer {
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }

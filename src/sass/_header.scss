@@ -1,3 +1,12 @@
+header {
+  @media screen and (min-width: 768px) {
+    display: flex;
+
+  }
+
+  @media screen and (min-width: 1366px) {}
+}
+
 .header__bg-img {
   display: none;
 
@@ -29,10 +38,11 @@
 
 .header {
   min-width: 400px;
-  padding: 57px 0 0 54px;
+  padding: 40px 20 0 20px;
 
   @media screen and (min-width: 768px) {
     min-width: 318px;
+    padding: 57px 20 0 54px;
   }
 
   @media screen and (min-width: 1366px) {
@@ -43,9 +53,7 @@
     max-width: 357px;
   }
 
-  &__container {
-    display: flex;
-  }
+
 
   &__burger {
     border: none;
@@ -101,7 +109,7 @@
   }
 
   &__title {
-    width: 311px;
+    min-width: 100px;
     color: var(--primery-txt-cl);
     font-weight: 300;
     font-size: 39.9588px;
@@ -124,7 +132,7 @@
   }
 
   &__text {
-    width: 300px;
+    min-width: 100px;
     color: var(--primery-txt-cl);
     font-weight: 400;
     font-size: 17.9814px;
@@ -132,7 +140,7 @@
     margin-bottom: 60px;
 
     @media screen and (min-width: 768px) {
-      width: 250px;
+      min-width: 250px;
       margin-bottom: 0;
     }
 

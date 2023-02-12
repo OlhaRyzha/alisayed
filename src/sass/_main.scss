@@ -1,17 +1,15 @@
-.main__container {
+main {
   display: flex;
   flex-direction: column;
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
   }
-
 }
 
 .benefits {
   min-width: 400px;
-  // min-width: 614px;
-  padding: 70px 103px 66px 59px;
+  padding: 70px 20px 66px 20px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -29,18 +27,22 @@
   }
 
   @media screen and (min-width: 768px) {
+    padding: 75px 20px 75px 40px;
     min-width: 368px;
   }
 
+
+
   @media screen and (min-width: 1366px) {
+    padding: 70px 103px 66px 59px;
     min-width: 614px;
   }
 
   &__item+&__item {
-    margin-top: 85px;
+    margin-top: 55px;
 
     @media screen and (min-width: 768px) {
-      margin-top: 15px;
+      margin-top: 55px;
     }
 
     @media screen and (min-width: 1366px) {
@@ -62,10 +64,10 @@
   }
 
   &__text {
-    width: 300px;
+    min-width: 100px;
 
     @media screen and (min-width: 768px) {
-      width: 250px;
+      min-width: 150px;
     }
 
     @media screen and (min-width: 1366px) {
@@ -92,10 +94,10 @@
 .verified {
 
   height: 100%;
-  padding: 60px 132px 70px 54px;
+  padding: 60px 20px 70px 20px;
 
   @media screen and (min-width: 768px) {
-    padding: 60px 20px 70px 54px;
+    padding: 60px 20px 60px 40px;
   }
 
   @media screen and (min-width: 1366px) {
@@ -129,11 +131,11 @@
   }
 
   &__text {
-    width: 300px;
+    min-width: 100px;
     margin-bottom: 53px;
 
     @media screen and (min-width: 768px) {
-      width: 250px;
+      min-width: 150px;
     }
 
     @media screen and (min-width: 1366px) {
@@ -156,6 +158,7 @@
   color: var(--main-txt-cl);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: 100% 100%;
   background: linear-gradient(0deg, rgba(22, 38, 51, 0.75),
       rgba(22, 38, 51, 0.75)), url('/src/images/bg/workplace.png');
 
