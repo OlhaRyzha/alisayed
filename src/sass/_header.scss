@@ -4,8 +4,9 @@
   @media screen and (min-width: 768px) {
 
     display: block;
+    background-size: auto;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left center;
     background-image: url('/src/images/bg/dog.png');
 
     @media (min-device-pixel-ratio: 2),
@@ -14,9 +15,14 @@
       background-image: url('/src/images/bg_2x/dog_2x.png');
     }
 
-    min-width: 908px;
+    min-width: 450px;
     height: 715px;
 
+  }
+
+  @media screen and (min-width: 1366px) {
+    background-position: center;
+    min-width: 908px;
   }
 
 }
@@ -26,6 +32,10 @@
   padding: 57px 0 0 54px;
 
   @media screen and (min-width: 768px) {
+    min-width: 318px;
+  }
+
+  @media screen and (min-width: 1366px) {
     min-width: 458px;
   }
 
@@ -97,6 +107,16 @@
     font-size: 39.9588px;
     line-height: calc(58 / 39.9588);
     margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+      width: 200px;
+      margin-bottom: 10px;
+    }
+
+    @media screen and (min-width: 1366px) {
+      width: 311px;
+      margin-bottom: 60px;
+    }
   }
 
   &__title-accent {
@@ -112,8 +132,12 @@
     margin-bottom: 60px;
 
     @media screen and (min-width: 768px) {
-      width: 357px;
+      width: 250px;
       margin-bottom: 0;
+    }
+
+    @media screen and (min-width: 1366px) {
+      width: 357px;
     }
   }
 
@@ -148,9 +172,10 @@
   border-radius: 20px;
   display: flex;
   z-index: 10;
- @media screen and (min-width: 768px) {
-width: 500px;
-    }
+
+  @media screen and (min-width: 768px) {
+    width: 500px;
+  }
 }
 
 .modal-close {
