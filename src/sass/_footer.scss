@@ -1,6 +1,11 @@
 .footer__container {
   min-height: 715px;
   display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
 }
 
 .logo {
@@ -8,7 +13,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 458px;
+  min-width: 400px;
   padding: 52px 37px 47px 48px;
   background-repeat: no-repeat;
   background-position: center;
@@ -19,7 +24,11 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     background: linear-gradient(0deg, rgba(29, 83, 103, 0.75),
-      rgba(29, 83, 103, 0.75)), url('/src/images/bg_2x/boy_2x.png');
+        rgba(29, 83, 103, 0.75)), url('/src/images/bg_2x/boy_2x.png');
+  }
+
+  @media screen and (min-width: 768px) {
+    min-width: 458px;
   }
 
   &__wrap {
@@ -89,8 +98,8 @@
 }
 
 .modal-form {
-  min-width: 908px;
-  padding: 63px 236px 72px 57px;
+  min-width: 400px;
+  padding: 63px 20px 20px 57px;
   background-repeat: no-repeat;
   background-position: center;
   background: linear-gradient(0deg, rgba(90, 102, 95, .75),
@@ -100,9 +109,13 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     background: linear-gradient(0deg, rgba(90, 102, 95, .75),
-      rgba(90, 102, 95, .75)), url('/src/images/bg_2x/road_2x.png');
+        rgba(90, 102, 95, .75)), url('/src/images/bg_2x/road_2x.png');
   }
 
+  @media screen and (min-width: 768px) {
+    min-width: 908px;
+    padding: 63px 236px 72px 57px;
+  }
 
   &__title {
     font-weight: 900;
@@ -114,8 +127,15 @@
 
   &__wrap {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     gap: 11px;
     margin-bottom: 13px;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+    }
+
   }
 
   & input {
@@ -134,7 +154,7 @@
 
   & textarea {
     resize: none;
-    width: 619px;
+    width: 302px;
     height: 161px;
     background: transparent;
     border-radius: 10px;
@@ -142,6 +162,10 @@
     border: none;
     outline: 1px solid lightgrey;
     margin-bottom: 94px;
+
+    @media screen and (min-width: 768px) {
+      width: 619px;
+    }
   }
 
   &__list {

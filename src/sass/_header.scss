@@ -1,21 +1,33 @@
 .header__bg-img {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url('/src/images/bg/dog.png');
+  display: none;
 
-  @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-    background-image: url('/src/images/bg_2x/dog_2x.png');
+  @media screen and (min-width: 768px) {
+
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url('/src/images/bg/dog.png');
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: url('/src/images/bg_2x/dog_2x.png');
+    }
+
+    min-width: 908px;
+    height: 715px;
+
   }
 
-  min-width: 908px;
-  height: 715px;
 }
 
 .header {
-  min-width: 458px;
+  min-width: 400px;
   padding: 57px 0 0 54px;
+
+  @media screen and (min-width: 768px) {
+    min-width: 458px;
+  }
 
   &.header__wrap {
     max-width: 357px;
@@ -92,11 +104,17 @@
   }
 
   &__text {
-    width: 357px;
+    width: 300px;
     color: var(--primery-txt-cl);
     font-weight: 400;
     font-size: 17.9814px;
     line-height: calc(28 / 17.9814);
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+      width: 357px;
+      margin-bottom: 0;
+    }
   }
 
   &__text+&__text {
@@ -164,7 +182,7 @@
   display: none;
 }
 
-.modal-wrap {}
+
 
 .modal {
   &__link {

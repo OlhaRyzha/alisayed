@@ -1,9 +1,16 @@
 .main__container {
   display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
 }
 
 .benefits {
-  min-width: 614px;
+  width: 100%;
+  min-width: 400px;
+  // min-width: 614px;
   padding: 70px 103px 66px 59px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -16,9 +23,13 @@
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-   background: linear-gradient(0deg,
-      rgba(30, 146, 175, 0.75), rgba(30, 146, 175, 0.75)),
-    url('/src/images/bg_2x/books_2x.png');
+    background: linear-gradient(0deg,
+        rgba(30, 146, 175, 0.75), rgba(30, 146, 175, 0.75)),
+      url('/src/images/bg_2x/books_2x.png');
+  }
+
+  @media screen and (min-width: 768px) {
+    min-width: 614px;
   }
 
   &__item+&__item {
@@ -38,18 +49,28 @@
   }
 
   &__text {
-    width: 452px;
+    width: 300px;
+
+    @media screen and (min-width: 768px) {
+      width: 452px;
+    }
   }
 }
 
 .section-wrap {
+  width: 100%;
+  min-width: 400px;
   display: flex;
-  min-width: 752px;
   flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    min-width: 752px;
+  }
 }
 
 .starting,
 .verified {
+
   height: 100%;
   padding: 60px 132px 70px 54px;
 }
@@ -65,7 +86,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     background: linear-gradient(0deg, rgba(255, 244, 210, 0.91),
-      rgba(255, 244, 210, 0.91)), url('/src/images/bg_2x/decor_2x.png');
+        rgba(255, 244, 210, 0.91)), url('/src/images/bg_2x/decor_2x.png');
   }
 
   &__title {
@@ -80,8 +101,12 @@
   }
 
   &__text {
-    width: 566px;
+    width: 300px;
     margin-bottom: 53px;
+
+    @media screen and (min-width: 768px) {
+      width: 566px;
+    }
   }
 
 
@@ -106,7 +131,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
     background: linear-gradient(0deg, rgba(22, 38, 51, 0.75),
-      rgba(22, 38, 51, 0.75)), url('/src/images/bg_2x/workplace_2x.png');
+        rgba(22, 38, 51, 0.75)), url('/src/images/bg_2x/workplace_2x.png');
   }
 
   &__btn {
